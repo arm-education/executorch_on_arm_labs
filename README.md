@@ -1,8 +1,8 @@
 ![arm-education-logo](./Education_horizontal_violet.png)
 
-# Learn ExecuTorch on Arm: Practical Labs
+# Learn ExecuTorch on Arm: Practical Labs Collection
 
-Welcome to the **Learn ExecuTorch on Arm: Practical Labs Collection**! In these hands-on sessions, you will explore how PyTorch models can be exported and lowered to the ExecuTorch Runtime for more effective, lightweight, minimalist inference at the Edge. This will cover deploying to CPUs, particularly via the XNNPACK backend, for transformer-based and CNN models, before covering deployment to other hardware backends, such as the Arm Ethos-U Neural Processing Unit (NPU). This is **NOT** as substitute for [official documentation](https://docs.pytorch.org/executorch/stable/index.html), but provides an accessible no-nonsense entry point to learn more about ExecuTorch and get started quickly with limited background in Edge AI.
+Welcome to the **Learn ExecuTorch on Arm: Practical Labs Collection**! In these hands-on sessions, you will explore how PyTorch models can be exported and lowered to the ExecuTorch Runtime for more effective, lightweight, minimalist inference at the Edge. This will cover deploying to CPUs, particularly via the XNNPACK backend, for transformer-based and CNN models, before covering deployment to other hardware backends, such as the Arm Ethos-U Neural Processing Unit (NPU). This is **NOT** a substitute for [official documentation](https://docs.pytorch.org/executorch/stable/index.html), but provides an accessible no-nonsense entry point to learn more about ExecuTorch and get started quickly with limited background in Edge AI.
 
 1) **Edge AI Inference on Arm using the ExecuTorch Runtime + XNNPACK and Kleidi AI** - CPU Inference on Raspberry Pi 5 (Arm-powered) - PyTorch vs ExecuTorch at the Edge for Transformer-based Models
 - Can be completed on Raspberry Pi, or Arm-powered MacBook

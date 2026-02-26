@@ -1,4 +1,4 @@
-# **Lab Setup**
+# **Lab 0: Setup Instructions for Learn ExecuTorch on Arm**
 
 ## **Lab 1**
 

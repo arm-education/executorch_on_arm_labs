@@ -8,7 +8,7 @@ NPU_VENV_NAME="NPU_lab_venv"     # will be created at ./NPU_lab_venv
 CPU_VENV_NAME="CPU_lab_venv"     # will be created at ./CPU_lab_venv
 
 REPO_URL="https://github.com/pytorch/executorch.git"
-REPO_DIR="executorch"                 # will be cloned to ./executorch
+REPO_DIR="NPU_Lab_ExecuTorch/executorch"   
 
 echo "Working directory: $(pwd)"
 echo "NPU venv path: ./${NPU_VENV_NAME}"

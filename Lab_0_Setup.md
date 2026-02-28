@@ -36,11 +36,10 @@ You are recommended to use a Linux aarch64 or x86 device/instance or an Arm-powe
 
 For this lab, you can use the `NPU_lab_venv` created by the `learn_executorch_on_arm_setup.sh` script. Before launching the lab, you must perform several further steps.
 
-1. On your terminal in the base directory of this repo, activate the venv and navigate to the provided `NPU_Lab_ExecuTorch` folder, and clone ExecuTorch.
+1. On your terminal in the base directory of this repo, activate the venv and navigate to the provided `NPU_Lab_ExecuTorch/executorch` folder.
 ```bash
-pyenv activate NPU_lab_venv
-cd NPU_Lab_ExecuTorch
-git clone https://github.com/pytorch/executorch.git
+source ./NPU_lab_venv/bin/activate
+cd NPU_Lab_ExecuTorch/executorch
 ```
 2. If on Mac you must install FVPs, otherwise skip to 3 (Linux machines will install FVPs as part of the next stage, but for a Mac they must be pre-installed)
 To install the FVPs on Mac - follow these [instructions](https://github.com/Arm-Examples/FVPs-on-Mac) carefully.

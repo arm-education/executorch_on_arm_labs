@@ -8,7 +8,7 @@ NPU_VENV_NAME="NPU_lab_venv"     # will be created at ./NPU_lab_venv
 CPU_VENV_NAME="CPU_lab_venv"     # will be created at ./CPU_lab_venv
 
 REPO_URL="https://github.com/pytorch/executorch.git"
-REPO_DIR="NPU_Lab_ExecuTorch/executorch"   
+REPO_DIR="NPU_Lab_ExecuTorch/executorch"
 
 echo "Working directory: $(pwd)"
 echo "NPU venv path: ./${NPU_VENV_NAME}"
@@ -46,15 +46,19 @@ install_deps_macos() {
   fi
 
   brew update
-  brew install openssl readline sqlite3 xz zlib tcl-tk libffi git curl pyenv
+  brew install openssl readline sqlite3 xz zlib tcl-tk libffi git curl wget pyenv
 }
 
 install_deps_linux_apt() {
   echo "1) Installing build dependencies (Linux/apt)..."
   sudo apt update
-  sudo apt install -y make build-essential libssl-dev zlib1g-dev \
-    libbz2-dev libreadline-dev libsqlite3-dev curl git \
-    libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev \
+  sudo apt install -y \
+    make build-essential \
+    libssl-dev zlib1g-dev \
+    libbz2-dev libreadline-dev libsqlite3-dev \
+    curl wget git \
+    libncursesw5-dev xz-utils tk-dev \
+    libxml2-dev libxmlsec1-dev \
     libffi-dev liblzma-dev
 }
 
@@ -117,13 +121,12 @@ echo "Using interpreter: ${PYENV_PYTHON}"
 echo "Interpreter version: $(${PYENV_PYTHON} --version)"
 
 create_venv_and_kernel() {
-  local venv_name="$1"        # e.g. NPU_lab_venv
-  local kernel_name="$2"      # e.g. npu_lab
-  local display_name="$3"     # e.g. Python (NPU_lab_venv)
+  local venv_name="$1"        
+  local kernel_name="$2"      
+  local display_name="$3"     
 
   local venv_path="./${venv_name}"
   local venv_python="${venv_path}/bin/python"
-  local venv_pip="${venv_path}/bin/pip"
 
   echo
   echo "4) Ensuring virtualenv exists at ${venv_path}..."

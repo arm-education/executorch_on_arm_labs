@@ -57,9 +57,12 @@ install_deps_linux_apt() {
     libssl-dev zlib1g-dev \
     libbz2-dev libreadline-dev libsqlite3-dev \
     curl wget git \
-    libncursesw5-dev xz-utils tk-dev \
+    libncurses5-dev libncursesw5-dev \
+    xz-utils tk-dev \
     libxml2-dev libxmlsec1-dev \
-    libffi-dev liblzma-dev
+    libffi-dev liblzma-dev \
+    libgdbm-dev libgdbm-compat-dev \
+    uuid-dev libnss3-dev
 }
 
 install_pyenv_linux_if_missing() {

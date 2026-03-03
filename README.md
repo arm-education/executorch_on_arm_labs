@@ -1,6 +1,6 @@
 ![arm-education-logo](./Education_horizontal_violet.png)
 
-# Learn ExecuTorch on Arm: Practical Labs Collection
+# 🚀Learn ExecuTorch on Arm: Practical Labs Collection🚀
 
 Welcome to the **Learn ExecuTorch on Arm: Practical Labs Collection**! In these hands-on sessions, you will explore how PyTorch models can be exported and lowered to the ExecuTorch Runtime for more effective, lightweight, minimalist inference at the Edge. This will cover deploying to CPUs, particularly via the XNNPACK backend, for transformer-based and CNN models, before covering deployment to other hardware backends, such as the Arm Ethos-U Neural Processing Unit (NPU), understanding the TOSA IR, use of Fixed Virtual Platforms, and use of tools such as Google's Model Explorer. This is **NOT** a substitute for [official documentation](https://docs.pytorch.org/executorch/stable/index.html), but provides an accessible, supplementary entry point to learn more about ExecuTorch and get started quickly with limited background in Edge AI, providing theoretical understanding and practical implementation skills.
 

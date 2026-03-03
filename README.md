@@ -19,7 +19,9 @@ Welcome to the **Learn ExecuTorch on Arm: Practical Labs Collection**! In these 
 
 ## Intended Audiences
 
-This Lab is designed for industry ML engineers with no-to-low ExecuTorch experience, who want to understand how & why to deploy AI inference applications at the Edge using the ExecuTorch runtime. It is also well-suited for Embedded Engineers with a basic fundamentals AI/ML knowledge, interested in incorporating ML in their Embedded/Edge applications. Students wanting to learn more will also find this accessible and useful, and academics, teachers, and trainers are encouraged to incorporate these resources into their teaching, for free, subject to the attached EULA in `LICENSE.md`.
+- These labs are designed for industry ML engineers with no-to-low ExecuTorch experience, who want to understand how & why to deploy AI inference applications at the Edge using the ExecuTorch runtime. 
+- They are also well-suited for Embedded Engineers with a basic fundamentals AI/ML knowledge, interested in incorporating ML in their Embedded/Edge applications.
+- Students wanting to learn more will also find this accessible and useful, and academics, teachers, and trainers are encouraged to incorporate these resources into their teaching, for free, subject to the attached EULA in `LICENSE.md`.
 
 Those who want to build or refresh fundamentals can first complete introductory and intermediate material such as the [Intro to AI](https://www.edx.org/learn/computer-science/arm-education-introduction-to-ai) or [Optimizing Generative AI on Arm](https://www.edx.org/learn/computer-science/arm-education-ai-on-arm) course.
 

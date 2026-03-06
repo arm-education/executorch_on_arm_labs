@@ -55,7 +55,7 @@ For this lab, you can use the `NPU_lab_venv` created by the `learn_executorch_on
 source ./NPU_lab_venv/bin/activate
 cd NPU_Lab_ExecuTorch/executorch
 ```
-2. If on Mac you must install FVPs, otherwise skip to 3 (Linux machines will install FVPs as part of the next stage, but for a Mac they must be pre-installed)
+2. If you are using a Mac you must install FVPs, otherwise skip to 3 (Linux machines will install FVPs as part of the next stage, but for a Mac they must be pre-installed)
 To install the FVPs on Mac - follow these [instructions](https://github.com/Arm-Examples/FVPs-on-Mac) carefully.
 
 3. From the terminal inside the `executorch` directory, run the following two scripts:

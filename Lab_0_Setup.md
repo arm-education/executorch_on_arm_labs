@@ -46,7 +46,7 @@ You are now ready to start the Lab.
 
 Lab 3 involves running ahead-of-time compilation on a CPU, but deploying to a Corstone 320 Fixed Virtual Platform (FVP). This is a simulation, running on your CPU, but simulating a Cortex-M85 microcontroller-class CPU connected in a heterogeneous system with an Ethos-U85 NPU.
 
-You are recommended to use a Linux aarch64 or x86 device/instance or an Arm-powered MacBook. Be aware that using the MacBook approach requires extra steps and can be less straightforward than spinning up a Linux instance. It is **NOT** recommended to use a Raspberry Pi as the FVP simulation will likely be too intensive.
+You are recommended to use a Linux aarch64 or x86 device/instance or an Arm-powered MacBook. Be aware that using a MacBook will require extra steps and can be less straightforward than spinning up a Linux instance. It is **NOT** recommended to use a Raspberry Pi as the FVP simulation will likely be too intensive.
 
 For this lab, you can use the `NPU_lab_venv` created by the `learn_executorch_on_arm_setup.sh` script. Before launching the lab, you must perform several further steps.
 

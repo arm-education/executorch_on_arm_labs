@@ -2,7 +2,7 @@
 
 ## **Lab 1**
 
-Lab 1 should ideally be completed on a Raspberry Pi 4 or 5, or similar Arm-based edge device running Linux. It can also be completed on an Arm-based Mac, however more powerful devices such as a Mac may show inverse performance results when comparing PyTorch and ExecuTorch. We perform both ahead-of-time (AOT) compilation and inference on the CPU of the hardware used.
+Lab 1 should ideally be completed on a Raspberry Pi 4 or 5, or similar Arm-based edge device running Linux. It can also be completed on an Arm-based Mac, however more powerful devices such as a Mac may show inverse performance results when comparing PyTorch and ExecuTorch. This is because PyTorch benefits from highly optimized CPU backends on powerful laptop/desktop-class hardware, whereas on a Raspberry Pi or other embedded/edge device, ExecuTorch’s lightweight runtime and lower overhead make it better suited to constrained CPUs, leading to improved performance and efficiency. We perform both ahead-of-time (AOT) compilation and inference on the CPU of the hardware used.
 
 A virtual Python environment running a Python version that supports ExecuTorch is required. It is recommended that the `learn_executorch_on_arm_setup.sh` script is used to create a virtual environment with Python 3.11.14. The script supports both aarch64 macOS and Linux.
 

@@ -62,7 +62,7 @@ To install the FVPs on Mac - follow these [instructions](https://github.com/Arm-
 
 ```bash
 ./install_executorch.sh
-./examples/arm/setup.sh --i-agree-to-the-contained-eula --enable-mlsdk-deps
+./examples/arm/setup.sh --i-agree-to-the-contained-eula 
 ```
 Both scripts might take some time to install.
 

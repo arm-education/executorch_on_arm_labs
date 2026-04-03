@@ -86,7 +86,7 @@ You are now ready to start the Lab.
 
 Start Jupyter Lab by running:
 ```bash
-jupyter lab
+jupyter lab Lab_3_Accelerating_ExecuTorch_Ethos_NPU.ipynb
 ```
 Copy the link provided in the terminal output, open it in your local browser, and follow the instructions in the notebooks.
 

@@ -18,7 +18,7 @@ You can launch a lab in VSCode with the Jupyter extension, or from the terminal 
 jupyter lab Lab_1_Transformer_Inference_ExecuTorch.ipynb
 ```
 
-This will launch a browser window. 
+This will output a URL, which can be entered into your browser to launch the lab.
 
 This lab uses models from Hugging Face. If you do not already have an account, it is free to create one [here](https://huggingface.co/join).
 You must create an access token [here](https://huggingface.co/settings/tokens). Click `New token`, name it, and then click `Generate token`. Copy your token to a safe place e.g., notes.
@@ -36,7 +36,7 @@ You are now ready to start the Lab.
 
 ## **Lab 2**
 
-Lab 1 should ideally be completed on a Raspberry Pi 4 or 5 with a PiCamera. Without a PiCamera, 90% of the lab can still be completed. You can also use similar Arm-based edge devices running Linux, or an Arm-based Mac, however more powerful devices such as a Mac may show inverse performance results when comparing PyTorch and ExecuTorch. We perform both ahead-of-time (AOT) compilation and inference on the CPU of the hardware used.
+Lab 2 should ideally be completed on a Raspberry Pi 4 or 5 with a PiCamera. Without a PiCamera, 90% of the lab can still be completed. You can also use similar Arm-based edge devices running Linux, or an Arm-based Mac, however more powerful devices such as a Mac may show inverse performance results when comparing PyTorch and ExecuTorch. We perform both ahead-of-time (AOT) compilation and inference on the CPU of the hardware used.
 
 It is recommended that you utilize the `CPU_lab_venv` created for Lab 1, and you can launch using the same method as in Lab 1.
 
@@ -48,15 +48,31 @@ Lab 3 involves running ahead-of-time compilation on a CPU, but deploying to a Co
 
 You are recommended to use a Linux aarch64 or x86 device/instance or an Arm-powered MacBook. Be aware that using a MacBook will require extra steps and can be less straightforward than spinning up a Linux instance. It is **NOT** recommended to use a Raspberry Pi as the FVP simulation will likely be too intensive.
 
-For this lab, you can use the `NPU_lab_venv` created by the `learn_executorch_on_arm_setup.sh` script. Before launching the lab, you must perform several further steps.
+A good option is to use an Arm-based AWS instance. If you would like to use AWS, follow these steps, otherwise skip to 1:
+
+**Launch an AWS EC2 instance**  
+   - Go to Amazon EC2 and create a new instance.
+   - **Select key pair**: Create a key for SSH connection (e.g., `yourkey.pem`).
+   - **Choose an AMI**: Use the `Ubuntu 22.04` AMI as the operating system.
+   - **Instance type**: Select `m7g.xlarge` (Graviton-based instance with Arm Neoverse cores).
+   - **Storage**: Add 64 GB of root storage.
+
+**Connect to the instance via SSH**  
+   Use the following command to establish an SSH connection (replace with your instance details):
+   ```bash
+   ssh -i "yourkey.pem" -L 8888:localhost:8888 ubuntu@<ec2-public-dns>
+   ```
+
+For this lab, you can use the `NPU_lab_venv` created by the `learn_executorch_on_arm_setup.sh` script so make sure to run it if you have not run it on your device. Before launching the lab, you must perform several further steps.
 
 1. On your terminal in the base directory of this repo, activate the virtual environment and navigate to the provided `NPU_Lab_ExecuTorch/executorch` folder.
 ```bash
 source ./NPU_lab_venv/bin/activate
 cd NPU_Lab_ExecuTorch/executorch
 ```
+
 2. If you are using a Mac you must install FVPs, otherwise skip to 3 (Linux machines will install FVPs as part of the next stage, but for a Mac they must be pre-installed)
-To install the FVPs on Mac - follow these [instructions](https://github.com/Arm-Examples/FVPs-on-Mac) carefully.
+To install the FVPs on Mac - follow these [instructions](https://github.com/Arm-Examples/FVPs-on-Mac) carefully. Do not install the FVPs inside executorch, instead install them in a neutral directory within your workspace, separate to this repo, and ensure they are on your PATH.
 
 3. From the terminal inside the `executorch` directory, run the following two scripts:
 
@@ -67,3 +83,10 @@ To install the FVPs on Mac - follow these [instructions](https://github.com/Arm-
 Both scripts might take some time to install.
 
 You are now ready to start the Lab.
+
+Start Jupyter Lab by running:
+```bash
+jupyter lab
+```
+Copy the link provided in the terminal output, open it in your local browser, and follow the instructions in the notebooks.
+

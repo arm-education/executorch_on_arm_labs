@@ -32,7 +32,7 @@ Those who want to build or refresh fundamentals can first complete introductory 
 
 ## Interested in Contributing?
 
-We would welcome labs for this repository that are contributed from the community - check out CONTRIBUTING.md.
+We would welcome labs for this repository that are contributed from the community - check out `CONTRIBUTING.md`.
 
 ## License
 You are free to fork or clone this material. See `LICENSE.md` for the complete license.

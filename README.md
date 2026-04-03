@@ -15,8 +15,6 @@ Welcome to the **ExecuTorch on Arm Practical Labs**! In these hands-on sessions,
 
 > Note: Regardless of hardware, all labs are executable documentation in the Jupyter Notebook style, so can be read for their educational value without running the code.
 
-### More labs coming soon...
-
 ## Intended Audiences
 
 - These labs are designed for industry ML engineers with little or no ExecuTorch experience who want to understand how and why to deploy AI inference applications at the Edge using the ExecuTorch runtime. 

@@ -1,3 +1,5 @@
+**NOTE: these labs have been upgraded and replaced with a complete course here: https://learn.arm.com/courses/executorch-on-arm/. Try it out, and let us know what you think!**
+
 ![arm-education-logo](./Education_horizontal_violet.png)
 
 # 🚀 **Get Practical with ExecuTorch on Arm Labs** 🚀

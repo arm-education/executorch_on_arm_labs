@@ -1,4 +1,4 @@
-**NOTE: these labs have been upgraded and replaced with a complete course here: https://learn.arm.com/courses/executorch-on-arm/. Try it out, and let us know what you think!**
+**NOTE: these labs have been upgraded and replaced with a complete, free, online course: [try out the course, and let us know what you think!](https://learn.arm.com/courses/executorch-on-arm/)**
 
 ![arm-education-logo](./Education_horizontal_violet.png)
 
